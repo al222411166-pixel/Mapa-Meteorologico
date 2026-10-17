@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicación Web de Mapa Meteorológico Integral</title>
+  
+  <!-- Hoja de estilos y script de Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Portal Meteorológico y Localizador.</h1>
+    <p>Realizado por Rolando Yhair Delgadillo Rojas, Univercidad UTVT</p>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <input type="text" id="city-input" placeholder="Introduce un lugar (ej. Monterrey, Madrid)...">
+      <button id="search-btn">Consultar API</button>
+    </div>
+
+    
+    <div id="weather-card" class="weather-card">
+      <p>Introduce una ubicación para desplegar las coordenadas y descripción geográfica.</p>
+    </div>
+
+    <div id="map"></div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
